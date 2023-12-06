@@ -1,0 +1,17 @@
+$font-sizeMap:(
+    f-small : 14px,
+    f-medium : 16px,
+    f-large : 30px
+);
+@mixin font-sizes($size){
+    font-size: map-get($font-sizeMap, $size);
+}
+
+$colorMap:(
+    primary : blue,
+    secondary: gray,
+    font-color: red
+);
+@mixin colors($color){
+        color: map-get($colorMap, $color);
+}

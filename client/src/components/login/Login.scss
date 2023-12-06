@@ -1,0 +1,60 @@
+@import '../../scss/fonts.scss';
+@import '../../scss/colors.scss';
+
+.login-outer{
+        height: 100vh;
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color);
+    .login-inner{
+        width: 80%;
+        height: 80%;
+ 
+        h3{
+            @include font-sizes(f-large);
+            color: var(--font-color);
+            font-weight: 600;
+        }
+        .input-form{
+            width: 100%;
+            height: auto;
+       
+            text-align: center;
+            margin-top: 100px;
+
+            input{
+                margin-bottom: 10px;
+                width: 40%;
+                height: 46px;
+                border-radius: 10px;
+                outline: none;
+                border: none;
+                padding-left: 20px;
+            }
+            button{
+                padding:0 100px;
+                height: 46px;
+                border: none;
+                border-radius:20px;
+                @include font-sizes(f-medium);
+                font-weight: 600;
+                mix-blend-mode: lighten;
+                
+            }
+        }
+        a{
+            text-decoration: none;
+            p{
+                @include font-sizes(f-medium);
+                color: var(--font-color);
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+       
+
+
+    }
+}
